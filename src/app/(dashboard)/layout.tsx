@@ -1,3 +1,4 @@
+import Menu from "@/components/Menu";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +11,7 @@ export default function DashboardLayout({
     <div className="h-screen flex">
       {/* left navbar component */}
       <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-red-200 p-4">
+        {/* logo and name */}
         <Link
           href={"/"}
           className="flex items-center justify-center lg:justify-start gap-2
@@ -18,6 +20,9 @@ export default function DashboardLayout({
           <Image src="/assets/school.png" alt="logo" width={35} height={35} />
           <span className="hidden lg:block">NextGen</span>
         </Link>
+
+        {/* menu  */}
+        <Menu />
       </div>
       {/* right main component */}
       <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">
