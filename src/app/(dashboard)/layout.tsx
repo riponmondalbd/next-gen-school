@@ -3,9 +3,5 @@ export default function DashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <div>dashboard{children}</div>
-    </html>
-  );
+  return <div>dashboard{children}</div>;
 }
