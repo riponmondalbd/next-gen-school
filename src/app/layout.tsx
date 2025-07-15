@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amar School",
+  title: "Clyra Academy",
   description: "Next.js School Management System",
 };
 
