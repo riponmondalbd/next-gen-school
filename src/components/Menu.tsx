@@ -114,5 +114,13 @@ const menuItems = [
 ];
 
 export default function Menu() {
-  return <div>Menu</div>;
+  return (
+    <div>
+      {menuItems.map((item) => (
+        <div className="" key={item.title}>
+          <span>{item.title}</span>
+        </div>
+      ))}
+    </div>
+  );
 }
