@@ -11,8 +11,8 @@ export default function DashboardLayout({
       {/* left navbar component */}
       <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-red-200">
         <Link href={"/"}>
-          <Image src="/assets/logo.png" alt="logo" width={32} height={32} />
-          <span>clyraacademy</span>
+          <Image src="/assets/school.png" alt="logo" width={32} height={32} />
+          <span className="hidden lg:block">NextGenSchool</span>
         </Link>
       </div>
       {/* right main component */}
