@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const menuItems = [
   {
     title: "MENU",
@@ -119,6 +122,12 @@ export default function Menu() {
       {menuItems.map((item) => (
         <div className="" key={item.title}>
           <span>{item.title}</span>
+          {item.items.map((singleItem) => (
+            <Link href={singleItem.href} key={singleItem.label}>
+              <Image src={singleItem.icon} alt="" width={20} height={20} />
+              <span>{singleItem.label}</span>
+            </Link>
+          ))}
         </div>
       ))}
     </div>
