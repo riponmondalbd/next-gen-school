@@ -11,6 +11,7 @@ export default function Navbar() {
           width={14}
           height={14}
         />
+        <input type="text" placeholder="search" />
       </div>
       {/* icons and user */}
       <div className="">icon and user</div>
