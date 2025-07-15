@@ -6,9 +6,13 @@ export default function DashboardLayout({
   return (
     <div className="h-screen flex">
       {/* left navbar component */}
-      <div className="w-1/6 bg-red-200">l</div>
+      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-red-200">
+        l
+      </div>
       {/* right main component */}
-      <div className="w-5/6 bg-blue-200">r</div>
+      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">
+        r
+      </div>
     </div>
   );
 }
