@@ -26,7 +26,7 @@ export default function AdminPage() {
             <AttendanceChart />
           </div>
         </div>
-        {/* bottom charts */}
+        {/* bottom finance chart */}
         <div className="w-full h-[500px]">
           <FinanceChart />
         </div>
