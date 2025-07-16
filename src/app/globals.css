@@ -5,6 +5,10 @@
   --foreground: #171717;
   --nextSky: #c3ebfa;
   --nextSkyLight: #edf9fd;
+  --nextPurple: #cfceff;
+  --nextPurpleLight: #f1f0ff;
+  --nextYellow: #fae27c;
+  --nextYellowLight: #fefce8;
 }
 
 @theme inline {
@@ -12,6 +16,10 @@
   --color-foreground: var(--foreground);
   --color-nextSky: var(--nextSky);
   --color-nextSkyLight: var(--nextSkyLight);
+  --color-nextPurple: var(--nextPurple);
+  --color-nextPurpleLight: var(--nextPurpleLight);
+  --color-nextYellow: var(--nextYellow);
+  --color-nextYellowLight: var(--nextYellowLight);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
