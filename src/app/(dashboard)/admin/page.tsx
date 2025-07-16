@@ -6,7 +6,7 @@ export default function AdminPage() {
       {/* left side of main content */}
       <div className="w-full lg:w-2/3">
         {/* user cards */}
-        <div className="flex gap-4 justify-between">
+        <div className="flex gap-4 justify-between flex-wrap">
           <UserCard type="student" />
           <UserCard type="teacher" />
           <UserCard type="parent" />
