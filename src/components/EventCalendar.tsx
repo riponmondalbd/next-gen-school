@@ -38,6 +38,8 @@ export default function EventCalendar() {
     <div className="bg-white p-4 rounded-md">
       {/* calender */}
       <Calendar onChange={onChange} value={value} />
+
+      {/* Events */}
       {/* title */}
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold my-4">Events</h1>
