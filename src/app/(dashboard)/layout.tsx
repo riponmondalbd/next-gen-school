@@ -19,7 +19,7 @@ export default function DashboardLayout({
         "
         >
           <Image src="/assets/school.png" alt="logo" width={35} height={35} />
-          <span className="hidden lg:block">NextGen</span>
+          <span className="hidden lg:block font-bold">NextGen</span>
         </Link>
 
         {/* menu  */}
