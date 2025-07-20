@@ -131,7 +131,7 @@ export default function Menu() {
                 <Link
                   href={singleItem.href}
                   key={singleItem.label}
-                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 rounded-md hover:bg-nextSkyLight"
+                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-nextSkyLight"
                 >
                   <Image src={singleItem.icon} alt="" width={20} height={20} />
                   <span className="hidden lg:block">{singleItem.label}</span>
