@@ -59,7 +59,6 @@ const menuItems = [
         href: "/list/assignments",
         visible: ["admin", "teacher", "student", "parent"],
       },
-
       {
         icon: "/assets/menu/result.png",
         label: "Results",
