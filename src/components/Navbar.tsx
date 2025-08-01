@@ -4,12 +4,16 @@ export default function Navbar() {
   return (
     <div className="flex items-center justify-between p-4">
       {/* search bar */}
-      <div className="hidden md:flex">
+      <div className="hidden md:flex items-center gap-2 text-sm rounded-full ring-[1.5px] ring-gray-300 px-2">
         <Image src={"/assets/search.png"} alt="search" width={14} height={14} />
-        <input type="text" placeholder="Search..." />
+        <input
+          type="text"
+          placeholder="Search..."
+          className="w-[200px] p-2 bg-transparent outline-none"
+        />
       </div>
       {/* icons and user */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 justify-end w-full">
         {/* message */}
         <div className="bg-white rounded-full w-7 h-7 flex items-center justify-center cursor-pointer">
           <Image
