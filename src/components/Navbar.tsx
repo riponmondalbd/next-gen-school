@@ -31,6 +31,17 @@ export default function Navbar() {
         </div>
 
         {/* user name & title */}
+        <div className="flex flex-col">
+          <span className="text-sm leading-3 font-medium">Ripon Mondal</span>
+          <span className="text-[10px] text-gray-500 text-right">Admin</span>
+        </div>
+        <Image
+          src={"/assets/avatar.png"}
+          alt="avatar"
+          width={36}
+          height={36}
+          className="rounded-full"
+        />
       </div>
     </div>
   );
