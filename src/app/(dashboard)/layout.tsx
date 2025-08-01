@@ -26,8 +26,10 @@ export default function DashoboardLayout({
       </div>
 
       {/* right main content */}
-      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#f7f8fa] overflow-scroll">
+      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll">
+        {/* page top navbar */}
         <Navbar />
+
         {children}
       </div>
     </div>
