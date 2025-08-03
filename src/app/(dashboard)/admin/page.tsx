@@ -6,11 +6,11 @@ export default function AdminPage() {
       {/* left content */}
       <div className="w-full lg:w-2/3">
         {/* user cards */}
-        <div className="flex gap-4 justify-between">
-          <UserCard type="students" />
-          <UserCard type="teachers" />
-          <UserCard type="parents" />
-          <UserCard type="staffs" />
+        <div className="flex gap-4 justify-between flex-wrap">
+          <UserCard type="student" />
+          <UserCard type="teacher" />
+          <UserCard type="parent" />
+          <UserCard type="staff" />
         </div>
       </div>
       {/* right content */}
