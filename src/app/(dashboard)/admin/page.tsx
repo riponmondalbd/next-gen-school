@@ -1,3 +1,4 @@
+import Announcements from "@/components/Announcements";
 import AttendanceChart from "@/components/AttendanceChart";
 import CountChart from "@/components/CountChart";
 import EventCalendar from "@/components/EventCalendar";
@@ -35,7 +36,11 @@ export default function AdminPage() {
       </div>
       {/* right content */}
       <div className="w-full lg:w-1/3 flex flex-col gap-8">
+        {/* calender and events */}
         <EventCalendar />
+
+        {/* announcements */}
+        <Announcements />
       </div>
     </div>
   );

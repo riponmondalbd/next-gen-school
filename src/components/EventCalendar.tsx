@@ -40,6 +40,7 @@ export default function EventCalendar() {
       <Calendar onChange={onChange} value={value} />
 
       {/* events */}
+      {/* title and icon */}
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold my-4">Events</h1>
         <Image
@@ -49,6 +50,7 @@ export default function EventCalendar() {
           height={20}
         />
       </div>
+      {/* details events */}
       <div className="flex flex-col gap-4">
         {events.map((event) => (
           <div
