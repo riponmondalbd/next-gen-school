@@ -18,7 +18,7 @@ export default function DashoboardLayout({
           className="flex items-center justify-center lg:justify-start gap-2"
         >
           <Image src="/assets/logo.png" alt="logo" width={35} height={35} />
-          <span className="hidden lg:block">Next Gen</span>
+          <span className="hidden lg:block font-bold">Next Gen</span>
         </Link>
 
         {/* menu detials */}
