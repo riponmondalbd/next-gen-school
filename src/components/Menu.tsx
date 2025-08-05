@@ -130,7 +130,7 @@ export default function Menu() {
                 <Link
                   href={item.href}
                   key={item.label}
-                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2"
+                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-nextSkyLight"
                 >
                   <Image
                     src={item.icon}
