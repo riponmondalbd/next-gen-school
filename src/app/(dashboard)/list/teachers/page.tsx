@@ -11,11 +11,32 @@ export default function TeacherListPage() {
           {/* search box */}
           <TableSearch />
           {/* all filters */}
-          <div className="">
-            <button>
+          <div className="flex items-center gap-4 self-end md:self-auto">
+            {/* filter */}
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
               <Image
                 src={"/assets/filter.png"}
                 alt="filter icon"
+                width={14}
+                height={14}
+              />
+            </button>
+
+            {/* sort */}
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
+              <Image
+                src={"/assets/sort.png"}
+                alt="sort icon"
+                width={14}
+                height={14}
+              />
+            </button>
+
+            {/* plus */}
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
+              <Image
+                src={"/assets/plus.png"}
+                alt="plus icon"
                 width={14}
                 height={14}
               />
