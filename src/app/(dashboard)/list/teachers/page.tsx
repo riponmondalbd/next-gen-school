@@ -1,3 +1,4 @@
+import Pagination from "@/components/Pagination";
 import TableSearch from "@/components/TableSearch";
 import Image from "next/image";
 
@@ -47,7 +48,7 @@ export default function TeacherListPage() {
       {/* list of the teachers section */}
       <div className=""></div>
       {/* pagination section */}
-      <div className=""></div>
+      <Pagination />
     </div>
   );
 }
