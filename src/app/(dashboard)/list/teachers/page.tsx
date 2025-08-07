@@ -135,14 +135,16 @@ export default function TeacherListPage() {
             </button>
 
             {/* plus */}
-            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
-              <Image
-                src={"/assets/plus.png"}
-                alt="plus icon"
-                width={14}
-                height={14}
-              />
-            </button>
+            {role === "admin" && (
+              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
+                <Image
+                  src={"/assets/plus.png"}
+                  alt="plus icon"
+                  width={14}
+                  height={14}
+                />
+              </button>
+            )}
           </div>
         </div>
       </div>
