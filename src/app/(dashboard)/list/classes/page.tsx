@@ -59,8 +59,8 @@ export default function ClassListPage() {
           <Link href={`/list/teachers/${item.id}`}>
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-nextSky cursor-pointer">
               <Image
-                src={"/assets/view.png"}
-                alt="view icon"
+                src={"/assets/edit.png"}
+                alt="edit icon"
                 width={16}
                 height={16}
               />
