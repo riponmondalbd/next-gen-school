@@ -1,3 +1,4 @@
+import BigCalendar from "@/components/BigCalendar";
 import Image from "next/image";
 
 export default function SingleTeacherPage() {
@@ -134,8 +135,11 @@ export default function SingleTeacherPage() {
             </div>
           </div>
         </div>
-        {/* bottom */}
-        <div className="">Schedule</div>
+        {/* bottom teacher's Schedule*/}
+        <div className="mt-4 bg-white rounded-md p-4 h-[800]">
+          <h1>Teacher&apos;s Schedule</h1>
+          <BigCalendar />
+        </div>
       </div>
       {/* right content */}
       <div className="w-full xl:w-1/3">r</div>
