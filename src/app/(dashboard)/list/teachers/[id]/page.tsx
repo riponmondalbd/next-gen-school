@@ -1,5 +1,6 @@
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalendar";
+import Performance from "@/components/Performance";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -80,7 +81,7 @@ export default function SingleTeacherPage() {
           {/* left top-right small card */}
           <div className="flex-1 flex gap-4 justify-between flex-wrap">
             {/* card attendance*/}
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[47%] xl:w-[45%] 2xl:w-[48%]">
               <Image
                 src={"/assets/singleAttendance.png"}
                 alt="single Attendance"
@@ -94,7 +95,7 @@ export default function SingleTeacherPage() {
               </div>
             </div>
             {/* card branch*/}
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[47%] xl:w-[45%] 2xl:w-[48%]">
               <Image
                 src={"/assets/singleBranch.png"}
                 alt="single Branch"
@@ -108,7 +109,7 @@ export default function SingleTeacherPage() {
               </div>
             </div>
             {/* card lesson */}
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[47%] xl:w-[45%] 2xl:w-[48%]">
               <Image
                 src={"/assets/singleLesson.png"}
                 alt="single Lesson"
@@ -122,7 +123,7 @@ export default function SingleTeacherPage() {
               </div>
             </div>
             {/* card class */}
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[47%] xl:w-[45%] 2xl:w-[48%]">
               <Image
                 src={"/assets/singleClass.png"}
                 alt="single class"
@@ -165,6 +166,7 @@ export default function SingleTeacherPage() {
             </Link>
           </div>
         </div>
+        <Performance />
         <Announcements />
       </div>
     </div>
