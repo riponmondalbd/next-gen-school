@@ -75,7 +75,64 @@ export default function SingleTeacherPage() {
             </div>
           </div>
           {/* left top-right small card */}
-          <div className="flex-1"></div>
+          <div className="flex-1 flex gap-4 justify-between flex-wrap">
+            {/* card attendance*/}
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image
+                src={"/assets/singleAttendance.png"}
+                alt="single Attendance"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
+              <div className="">
+                <h1 className="text-xl font-semibold">99%</h1>
+                <span className="text-sm text-gray-400">Attendance</span>
+              </div>
+            </div>
+            {/* card branch*/}
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image
+                src={"/assets/singleBranch.png"}
+                alt="single Branch"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
+              <div className="">
+                <h1 className="text-xl font-semibold">2</h1>
+                <span className="text-sm text-gray-400">Branches</span>
+              </div>
+            </div>
+            {/* card lesson */}
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image
+                src={"/assets/singleLesson.png"}
+                alt="single Lesson"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
+              <div className="">
+                <h1 className="text-xl font-semibold">6</h1>
+                <span className="text-sm text-gray-400">Lessons</span>
+              </div>
+            </div>
+            {/* card class */}
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image
+                src={"/assets/singleClass.png"}
+                alt="single class"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
+              <div className="">
+                <h1 className="text-xl font-semibold">6</h1>
+                <span className="text-sm text-gray-400">Classes</span>
+              </div>
+            </div>
+          </div>
         </div>
         {/* bottom */}
         <div className="">Schedule</div>
