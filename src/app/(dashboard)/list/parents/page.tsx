@@ -1,9 +1,9 @@
+import FormModel from "@/components/FormModel";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
 import { parentsData, role } from "@/lib/data";
 import Image from "next/image";
-import Link from "next/link";
 
 type Parent = {
   id: number;
@@ -57,25 +57,11 @@ export default function ParentListPage() {
       <td className="hidden lg:table-cell">{item.address}</td>
       <td>
         <div className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-nextSky cursor-pointer">
-              <Image
-                src={"/assets/edit.png"}
-                alt="edit icon"
-                width={16}
-                height={16}
-              />
-            </button>
-          </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-nextPurple cursor-pointer">
-              <Image
-                src={"/assets/delete.png"}
-                alt="view icon"
-                width={16}
-                height={16}
-              />
-            </button>
+            <>
+              <FormModel table="parent" type="update" data={item} />
+              <FormModel table="parent" type="delete" id={item.id} />
+            </>
           )}
         </div>
       </td>
@@ -113,16 +99,7 @@ export default function ParentListPage() {
             </button>
 
             {/* plus */}
-            {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
-                <Image
-                  src={"/assets/plus.png"}
-                  alt="plus icon"
-                  width={14}
-                  height={14}
-                />
-              </button>
-            )}
+            {role === "admin" && <FormModel table="parent" type="create" />}
           </div>
         </div>
       </div>
