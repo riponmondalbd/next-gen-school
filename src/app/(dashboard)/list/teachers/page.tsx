@@ -115,7 +115,7 @@ export default function TeacherListPage() {
           {/* all filters */}
           <div className="flex items-center gap-4 self-end md:self-auto">
             {/* filter */}
-            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow cursor-pointer">
               <Image
                 src={"/assets/filter.png"}
                 alt="filter icon"
@@ -125,7 +125,7 @@ export default function TeacherListPage() {
             </button>
 
             {/* sort */}
-            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow cursor-pointer">
               <Image
                 src={"/assets/sort.png"}
                 alt="sort icon"
@@ -136,7 +136,7 @@ export default function TeacherListPage() {
 
             {/* plus */}
             {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow">
+              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-nextYellow cursor-pointer">
                 <Image
                   src={"/assets/plus.png"}
                   alt="plus icon"
