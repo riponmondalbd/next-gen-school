@@ -49,7 +49,7 @@ export default function FormModel({
         </button>
       </form>
     ) : (
-      <TeacherForm type="create" />
+      <TeacherForm type="update" data={data} />
     );
   };
 
